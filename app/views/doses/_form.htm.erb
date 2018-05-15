@@ -1,10 +1,7 @@
-<%= simple_form_for() do |f|%>
+<%= simple_form_for([@cocktail, @dose]) do |f| %>
 <%= f.input :description %>
-<%= f.input :ingreduient_id, collection: @ingredients %>
-<%=  submit %>
+<%= f.input :ingredient_id, collection: @ingredients %>
+<%= submit %>
 <% end %>
 
-cocktail_doses_path
-@cocktail, @dose
 
-<form action = "url" method = ""></form>form>
